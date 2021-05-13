@@ -1,0 +1,151 @@
+
+phase4.o：     文件格式 elf32-i386
+
+
+Disassembly of section .text:
+
+00000000 <GNPzRPiyZu>:
+   0:	55                   	push   %ebp
+   1:	89 e5                	mov    %esp,%ebp
+   3:	90                   	nop
+   4:	90                   	nop
+   5:	90                   	nop
+   6:	90                   	nop
+   7:	90                   	nop
+   8:	90                   	nop
+   9:	90                   	nop
+   a:	90                   	nop
+   b:	90                   	nop
+   c:	90                   	nop
+   d:	90                   	nop
+   e:	90                   	nop
+   f:	90                   	nop
+  10:	90                   	nop
+  11:	90                   	nop
+  12:	90                   	nop
+  13:	90                   	nop
+  14:	90                   	nop
+  15:	b8 ff ff ff ff       	mov    $0xffffffff,%eax
+  1a:	5d                   	pop    %ebp
+  1b:	c3                   	ret    
+
+0000001c <do_phase>:
+  1c:	55                   	push   %ebp
+  1d:	89 e5                	mov    %esp,%ebp
+  1f:	83 ec 28             	sub    $0x28,%esp
+  22:	c7 45 e6 51 50 59 49 	movl   $0x49595051,-0x1a(%ebp)
+  29:	c7 45 ea 47 4f 55 54 	movl   $0x54554f47,-0x16(%ebp)
+  30:	66 c7 45 ee 48 00    	movw   $0x48,-0x12(%ebp)
+  36:	c7 45 f0 00 00 00 00 	movl   $0x0,-0x10(%ebp)
+  3d:	e9 e0 00 00 00       	jmp    122 <do_phase+0x106>
+  42:	8d 55 e6             	lea    -0x1a(%ebp),%edx
+  45:	8b 45 f0             	mov    -0x10(%ebp),%eax
+  48:	01 d0                	add    %edx,%eax
+  4a:	0f b6 00             	movzbl (%eax),%eax
+  4d:	88 45 f7             	mov    %al,-0x9(%ebp)
+  50:	0f be 45 f7          	movsbl -0x9(%ebp),%eax
+  54:	83 e8 41             	sub    $0x41,%eax
+  57:	83 f8 19             	cmp    $0x19,%eax
+  5a:	0f 87 b0 00 00 00    	ja     110 <do_phase+0xf4>
+  60:	8b 04 85 04 00 00 00 	mov    0x4(,%eax,4),%eax
+  67:	ff e0                	jmp    *%eax
+
+
+  69:	c6 45 f7 37          	movb   $0x37,-0x9(%ebp)				//L1
+  6d:	e9 9e 00 00 00       	jmp    110 <do_phase+0xf4>
+
+  72:	c6 45 f7 70          	movb   $0x70,-0x9(%ebp)
+  76:	e9 95 00 00 00       	jmp    110 <do_phase+0xf4>
+
+  7b:	c6 45 f7 30          	movb   $0x30,-0x9(%ebp)
+  7f:	e9 8c 00 00 00       	jmp    110 <do_phase+0xf4>
+
+  84:	c6 45 f7 36          	movb   $0x36,-0x9(%ebp)
+  88:	e9 83 00 00 00       	jmp    110 <do_phase+0xf4>
+
+  8d:	c6 45 f7 31          	movb   $0x31,-0x9(%ebp)				//L5
+  91:	eb 7d                	jmp    110 <do_phase+0xf4>
+
+  93:	c6 45 f7 38          	movb   $0x38,-0x9(%ebp)
+  97:	eb 77                	jmp    110 <do_phase+0xf4>
+
+  99:	c6 45 f7 30          	movb   $0x30,-0x9(%ebp)
+  9d:	eb 71                	jmp    110 <do_phase+0xf4>
+
+  9f:	c6 45 f7 37          	movb   $0x37,-0x9(%ebp)
+  a3:	eb 6b                	jmp    110 <do_phase+0xf4>
+
+  a5:	c6 45 f7 45          	movb   $0x45,-0x9(%ebp)
+  a9:	eb 65                	jmp    110 <do_phase+0xf4>
+
+  ab:	c6 45 f7 31          	movb   $0x31,-0x9(%ebp)                          //L10
+  af:	eb 5f                	jmp    110 <do_phase+0xf4>
+
+  b1:	c6 45 f7 31          	movb   $0x31,-0x9(%ebp)
+  b5:	eb 59                	jmp    110 <do_phase+0xf4>
+
+  b7:	c6 45 f7 5d          	movb   $0x5d,-0x9(%ebp)
+  bb:	eb 53                	jmp    110 <do_phase+0xf4>
+
+  bd:	c6 45 f7 69          	movb   $0x69,-0x9(%ebp)
+  c1:	eb 4d                	jmp    110 <do_phase+0xf4>
+
+  c3:	c6 45 f7 36          	movb   $0x36,-0x9(%ebp)
+  c7:	eb 47                	jmp    110 <do_phase+0xf4>
+
+  c9:	c6 45 f7 38          	movb   $0x38,-0x9(%ebp)
+  cd:	eb 41                	jmp    110 <do_phase+0xf4>                          //L15
+
+  cf:	c6 45 f7 31          	movb   $0x31,-0x9(%ebp)
+  d3:	eb 3b                	jmp    110 <do_phase+0xf4>
+
+  d5:	c6 45 f7 5d          	movb   $0x5d,-0x9(%ebp)
+  d9:	eb 35                	jmp    110 <do_phase+0xf4>
+
+  db:	c6 45 f7 5c          	movb   $0x5c,-0x9(%ebp)
+  df:	eb 2f                	jmp    110 <do_phase+0xf4>
+
+  e1:	c6 45 f7 65          	movb   $0x65,-0x9(%ebp)
+  e5:	eb 29                	jmp    110 <do_phase+0xf4>
+
+  e7:	c6 45 f7 32          	movb   $0x32,-0x9(%ebp)
+  eb:	eb 23                	jmp    110 <do_phase+0xf4>                       //L20
+
+  ed:	c6 45 f7 33          	movb   $0x33,-0x9(%ebp)
+  f1:	eb 1d                	jmp    110 <do_phase+0xf4>
+
+  f3:	c6 45 f7 38          	movb   $0x38,-0x9(%ebp)
+  f7:	eb 17                	jmp    110 <do_phase+0xf4>
+
+  f9:	c6 45 f7 79          	movb   $0x79,-0x9(%ebp)
+  fd:	eb 11                	jmp    110 <do_phase+0xf4>
+
+  ff:	c6 45 f7 3a          	movb   $0x3a,-0x9(%ebp)
+ 103:	eb 0b                	jmp    110 <do_phase+0xf4>
+
+ 105:	c6 45 f7 40          	movb   $0x40,-0x9(%ebp)                             //L25
+ 109:	eb 05                	jmp    110 <do_phase+0xf4>
+
+ 10b:	c6 45 f7 31          	movb   $0x31,-0x9(%ebp)                          //L26
+ 10f:	90                   	nop
+ 110:	8d 55 dc             	lea    -0x24(%ebp),%edx
+ 113:	8b 45 f0             	mov    -0x10(%ebp),%eax
+ 116:	01 c2                	add    %eax,%edx
+ 118:	0f b6 45 f7          	movzbl -0x9(%ebp),%eax
+ 11c:	88 02                	mov    %al,(%edx)
+ 11e:	83 45 f0 01          	addl   $0x1,-0x10(%ebp)
+ 122:	8b 45 f0             	mov    -0x10(%ebp),%eax
+ 125:	83 f8 08             	cmp    $0x8,%eax
+ 128:	0f 86 14 ff ff ff    	jbe    42 <do_phase+0x26>
+ 12e:	8d 55 dc             	lea    -0x24(%ebp),%edx
+ 131:	8b 45 f0             	mov    -0x10(%ebp),%eax
+ 134:	01 d0                	add    %edx,%eax
+ 136:	c6 00 00             	movb   $0x0,(%eax)
+ 139:	83 ec 0c             	sub    $0xc,%esp
+ 13c:	8d 45 dc             	lea    -0x24(%ebp),%eax
+ 13f:	50                   	push   %eax
+ 140:	e8 fc ff ff ff       	call   141 <do_phase+0x125>
+ 145:	83 c4 10             	add    $0x10,%esp
+ 148:	90                   	nop
+ 149:	c9                   	leave  
+ 14a:	c3                   	ret    

